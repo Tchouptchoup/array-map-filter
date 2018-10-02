@@ -22,6 +22,10 @@ En sortie: [
  */
 
 function getStringsLength(strings) {
+  let stringTab = strings.map(word => {
+    return word + ' contains ' + word.length + ' characters'
+  })
+  return stringTab
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,

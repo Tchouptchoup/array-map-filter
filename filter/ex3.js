@@ -24,6 +24,13 @@ Sortie attendue:
  */
 
 function keepStarks(names) {
+  let starksTab = names.filter(name => {
+    let nameLastName = name.split(' ')
+    if (nameLastName[1] === 'Stark') {
+      return name
+    }
+  })
+  return starksTab
 }
 
 // Ne pas modifier l'export

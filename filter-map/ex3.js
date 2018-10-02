@@ -51,6 +51,9 @@ Sortie attendue:
 */
 
 function getStudentsPerCurriculum(campuses, curriculumName) {
+  let cityTab = campuses.filter(campus => {return campus.curriculums.includes(curriculumName)}).reduce((sum, students) => { 
+    return sum + students.curriculums.numStudents}, 0)
+  return cityTab
 }
 
 module.exports = getStudentsPerCurriculum;

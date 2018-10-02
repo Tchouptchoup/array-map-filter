@@ -39,6 +39,12 @@ Exemple d'entrée:
  */
 
 function searchWordFilter(items, search) {
+  let searchWordTab = items.filter(movie => {
+    if (movie.toLowerCase().indexOf(search) != -1) {
+      return movie
+    }
+  })
+  return searchWordTab
 }
 
 // Ne pas modifier l'export
