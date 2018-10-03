@@ -17,3 +17,5 @@
     * soit plus simplement en lançant, depuis la racine du repo `array-map-filter`, `./enable SERIE NUMERO`, en remplaçant `SERIE` par `map`, `filter` ou `filter-map` et `NUMERO` par le n° de l'exercice. Par exemple, `./enable map 5` pour activer les tests du 5ème exercice de la série `map`
 * On peut également les activer / désactiver tous d'un coup, via `./enableAll` et `./disableAll`
 * L'avantage de procéder 1 par 1 est qu'après chaque test réussi, tu peux commit et push ton travail, et si Travis est configuré, un build se lancera avec les seuls tests activés.
+
+### test
